@@ -1,0 +1,65 @@
+{
+   "name": "Katalon TestingBot Integration",
+   "listeners": ["TestingBotTestListener"],
+   "configuration": {
+      "settingId": "com.kms.katalon.keyword.Testingbot-keywords",
+      "settingPage": {
+         "name": "TestingBot Integration",
+         "components": [
+            {
+               "key": "",
+               "type": "label",
+               "label": "Test's information"
+            },
+            {
+               "key": "secret",
+               "type": "secret",
+               "label": "API Secret",
+               "defaultValue": ""
+            },
+            {
+               "key": "key",
+               "type": "text",
+               "label": "API Key",
+               "defaultValue": ""
+            },
+            {
+               "key": "browserName",
+               "type": "text",
+               "label": "Browser's name",
+               "defaultValue": "chrome"
+            },
+            {
+               "key": "platform",
+               "type": "text",
+               "label": "Platform",
+               "defaultValue": "WIN10"
+            },
+            {
+               "key": "version",
+               "type": "text",
+               "label": "Version",
+               "defaultValue": "latest"
+            },
+            {
+               "key": "name",
+               "type": "text",
+               "label": "Test's name",
+               "defaultValue": "Default Test"
+            },
+            {
+               "key": "",
+               "type": "label",
+               "label": "Global configuration"
+            },
+            {
+               "key": "TestingBot Desired Capabilities Generator",
+               "type": "button",
+               "label": "Generate TestingBot Custom Profile",
+	            "implementationClassPath": "com.kms.katalon.keyword.testingbot.TestingBotButtonSelectionEventHandler",
+               "defaultValue": ""
+            }
+         ]
+      }
+   }
+}
